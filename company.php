@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/menu-course.css" />
+  <link rel="stylesheet" href="assets/css/company.css" />
 </head>
 <body>
   <body id="body">
@@ -39,107 +39,44 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">メニュー・コース</h2>
+          <h2 class="header__pagetitle">会社概要</h2>
         </header>
         <!-- contents -->
 
-        <nav>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
-            <li class="breadcrumbs__list">メニュー・コース</li>
-          </ul>
-        </nav>
-
-        <section class="menu">
-          <h2 class="menu__title">メニュー</h2>
-          <ul class="menu__container">
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>［大阪流］もんじゃ焼</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>ネギ焼き</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>広島焼</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>お好み焼き</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>焼きそば・焼うどん</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>一品・サラダ</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>揚げ物・鉄板焼き・ご飯もの</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>デザート</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="menu__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>期間限定</p>
-              </li>
-            </a>
-          </ul><!-- .menu__containe -->
+        <section class="company">
+          <table class="company-info">
+            <tbody>
+              <tr>
+                <th class="company-info--bold">社名</th>
+                <td class="company-info--data">テキストが入ります。</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">設立</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">資本金</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">本社所在地</th>
+                <td class="company-info--data">大阪府堺市中区深井清水町4034 中迫ビル 1F</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">代表者</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">従業員数</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">事業内容</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-
-        <section class="course">
-          <h2 class="course__title">コース</h2>
-          <ul class="course__container">
-            <a href="#">
-              <li class="course__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>もんじゃコース</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="course__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>鶏鍋コース</p>
-              </li>
-            </a>
-            <a href="#">
-              <li class="course__container--item">
-                <img src="assets/img/okonomi.jpg" alt="">
-                <p>チゲ鍋コース</p>
-              </li>
-            </a>
-          </ul><!-- .menu__containe -->
-
-        </section>
-
-
-
-
-
-
 
         <footer class="footer">
           <img class="footer__logopc" src="assets/img/footerlogo.png" alt="松毬">

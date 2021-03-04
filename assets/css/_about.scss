@@ -1,0 +1,21 @@
+.about {
+
+  //ブロック
+  &__ttl {
+    //element
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__txt {
+    //element
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.4;
+
+    &--red {
+      color: red;
+    }
+
+  }
+}

@@ -1,0 +1,1139 @@
+@import "mixin";
+@import "reset";
+@import "swiper";
+@import "remodal";
+@import "remodal_theme";
+@import "slick";
+@import "slick_theme";
+@import "base";
+@import "about";
+@import "header-nav";
+
+//レスポンシブ
+$pc: 1240px; // ラップトック
+$tab: 768px; // タブレット
+$sp: 440px; // スマホ
+$xs: 320px; //小型スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: ($xs)) {
+    @content;
+  }
+}
+
+//CSS記述
+
+/* ハンバーガー */
+.drawer-hidden {
+  display: none;
+}
+
+.drawer-open {
+  display: none;
+
+  @include tab {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  @include sp {
+    height: 40px;
+    width: 40px;
+    right: -10px;
+  }
+}
+
+.drawer-open span,
+.drawer-open span:before,
+.drawer-open span:after {
+  display: none;
+
+  @include tab {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+}
+
+.drawer-open span:before {
+  bottom: 8px;
+}
+
+.drawer-open span:after {
+  top: 8px;
+}
+
+#drawer-check:checked~.drawer-open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+#drawer-check:checked~.drawer-open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+#drawer-check:checked~.drawer-open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: #fff;
+}
+
+#drawer-check:checked~.nav {
+  left: 0;
+}
+
+//header-----------
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  &__logo {
+    width: 237px;
+
+    @include sp {
+      width: 150px;
+    }
+  }
+}
+
+.drawer {
+  width: 70%;
+
+  @include tab {
+    width: 60px;
+  }
+}
+
+.nav {
+  width: 100%;
+
+  @include tab {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 99;
+    background: #000;
+    transition: .5s;
+  }
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include tab {
+    width: 100%;
+    height: 90vh;
+    margin: calc((100vh - 90vh)/2) auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 2% 10px;
+    font-size: 16px;
+    line-height: 41px;
+
+    @include pc {
+      padding: 1%;
+    }
+
+    @include tab {
+      font-size: 20px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+//top-----------
+.top {
+  width: 100%;
+  height: calc(100vh - 129px);
+  background-image: url(../img/omusoba.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+//netshop
+.container-netshop {
+  position: relative;
+  width: 100%;
+  height: 588px;
+  background-image: url(../img/AdobeStock_403567669.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  @include pc {
+    height: 450px;
+  }
+
+  @include tab {
+    height: 830px;
+  }
+
+  @include sp {
+    height: 600px;
+  }
+
+  @include xs {
+    height: 550px;
+  }
+}
+
+.netshop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+
+  @include tab {
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 50%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    color: #fff;
+
+    @include tab {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @include sp {
+      width: 90%;
+    }
+
+    &--xl {
+      font-size: 40px;
+      padding: 30px 0;
+
+      @include sp {
+        font-size: 24px;
+      }
+    }
+
+    &--medium {
+      font-size: 30px;
+      padding: 10px 0;
+
+      @include sp {
+        font-size: 18px;
+      }
+    }
+
+    &--small {
+      font-size: 12px;
+    }
+
+    &--btn {
+      display: inline-block;
+      font-size: 20px;
+      margin: 20px 0;
+      padding: 10px 70px;
+      background: #a12a25;
+
+      @include sp {
+        font-size: 12px;
+        margin: 30px 0 20px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.red-border {
+  width: 100%;
+  height: 38px;
+  background-color: #a12a25;
+}
+
+//concept-----------
+.concept {
+  width: 100%;
+  height: 589px;
+  background-image: url(../img/omusoba02.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include pc {
+    background-position: center;
+  }
+
+  @include tab {
+    height: auto;
+    background: #000;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 40%;
+    height: 589px;
+    margin: 0 0 0 5%;
+    padding: 50px;
+    color: #fff;
+    text-align: right;
+
+    @include pc {
+      width: 60%;
+      margin: 0 0 0 5%;
+    }
+
+    @include tab {
+      height: auto;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @include sp {
+      padding: 10px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+
+    &--xl {
+      height: 506px;
+      font-size: 40px;
+      margin: 20px;
+      writing-mode: vertical-rl;
+      text-align: left;
+      display: inline-block;
+      line-height: 60px;
+
+      @include sp {
+        height: auto;
+        margin: 10px;
+        font-size: 30px;
+        line-height: 45px;
+      }
+
+      @include xs {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    &--medium {
+      height: 370px;
+      font-size: 18px;
+      margin: 20px;
+      writing-mode: vertical-rl;
+      text-align: left;
+      display: inline-block;
+      line-height: 32px;
+
+      @include pc {
+        margin: 20px 10px;
+      }
+
+      @include sp {
+        height: 350px;
+        margin: 10px auto;
+        font-size: 12px;
+        line-height: 2;
+      }
+
+      @include xs {
+        height: 400px;
+      }
+    }
+
+    &--btn {
+      display: inline-block;
+      font-size: 20px;
+      margin: 20px 0;
+      padding: 10px 70px;
+      background: #a12a25;
+
+      @include sp {
+        font-size: 12px;
+        padding: 10px 40px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@include tab {
+  .sp-img {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/omusoba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.desc-box {
+  text-align: center;
+}
+
+//news-----------
+.news {
+  width: 100%;
+
+  &__title {
+    padding: 50px 0;
+    font-size: 28px;
+    text-align: center;
+
+    @include sp {
+      padding: 30px 0;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 30%;
+    font-size: 20px;
+    margin: 20px auto 50px;
+    padding: 10px 70px;
+    background: #a12a25;
+    text-align: center;
+
+    @include tab {
+      width: 60%;
+    }
+
+    @include sp {
+      font-size: 12px;
+      padding: 10px 30px;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.container-news {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include pc {
+    width: 80%;
+  }
+}
+
+.article {
+  width: 100%;
+  margin: 20px;
+
+  @include sp {
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 10px 0;
+
+    @include sp {
+      font-size: 12px;
+    }
+  }
+}
+
+@include tab {
+  .sp-hidden {
+    display: none;
+  }
+}
+
+//course---------------
+.mask-red {
+  height: 100%;
+  background-color: rgba($color: #c62d07, $alpha: .8);
+}
+
+.course {
+  width: 100%;
+
+  &__border {
+    width: 100%;
+    height: 140px;
+    background-image: url(../img/AdobeStock_403567669.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    @include sp {
+      height: 100px;
+    }
+
+    &--middle {
+      font-size: 33px;
+      color: #fff;
+      text-align: center;
+      line-height: 140px;
+
+      @include sp {
+        font-size: 20px;
+        line-height: 100px;
+      }
+    }
+  }
+}
+
+.party {
+  width: 100%;
+  height: 459px;
+  display: flex;
+
+  @include tab {
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__text {
+    width: 50%;
+    padding: 50px 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.7;
+    background-image: url(../img/AdobeStock_403567669.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    @include pc {
+      padding: 20px auto;
+    }
+
+    @include tab {
+      padding: 20px;
+      width: 100%;
+    }
+
+    &--large {
+      font-size: 46px;
+
+      @include sp {
+        font-size: 24px;
+      }
+
+    }
+
+    &--medium {
+      font-size: 16px;
+
+      @include sp {
+        font-size: 12px;
+      }
+    }
+
+    &--xl {
+      font-size: 60px;
+
+      @include pc {
+        line-height: 1.3;
+      }
+
+      @include sp {
+        font-size: 30px;
+      }
+    }
+
+    &--yellow {
+      display: inline-block;
+      color: #000;
+      font-size: 20px;
+      margin: 0 20px;
+      padding: 5px 20px;
+      border-radius: 30px;
+      background: #fff100;
+      vertical-align: middle;
+
+      @include sp {
+        font-size: 12px;
+      }
+    }
+
+    &--small {
+      @include sp {
+        font-size: 12px;
+      }
+    }
+
+    &--btn {
+      display: block;
+      width: 75%;
+      font-size: 20px;
+      margin: 20px auto 50px;
+      padding: 10px 70px;
+      background: #a12a25;
+      text-align: center;
+
+      @include pc {
+        margin: 10px auto;
+        padding: 10px 30px;
+      }
+
+      @include sp {
+        font-size: 12px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  &__img {
+    width: 50%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  @include tab {
+    flex-direction: column;
+  }
+}
+
+//menu
+.menu {
+  width: 100%;
+  position: relative;
+
+  &__title {
+    padding: 50px 0;
+    font-size: 28px;
+    text-align: center;
+
+    @include sp {
+      padding: 20px 0;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 20%;
+    font-size: 20px;
+    margin: 3% auto;
+    padding: 15px 30px;
+    background: #000;
+    text-align: center;
+
+    @include pc {
+      width: 35%;
+      margin: 1% auto;
+    }
+
+    @include tab {
+      width: 50%;
+    }
+
+    @include sp {
+      width: 60%;
+      font-size: 12px;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.bg-red {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 62%;
+  background-image: url(../img/AdobeStock_403567669.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: .9;
+
+  @include pc {
+    height: 53%;
+  }
+
+  @include tab {
+    height: 65%;
+  }
+
+  @include sp {
+    top: 130px;
+    height: 60%;
+  }
+}
+
+.container-menu {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include pc {
+    width: 90%;
+  }
+}
+
+.menulist {
+  width: 30%;
+  margin: 20px auto;
+
+  @include tab {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+
+    @include tab {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+//swiper
+.swiper-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+
+  @include tab {
+    display: block;
+    color: #fff;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 0;
+  right: auto
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: -10px;
+  left: auto
+}
+
+//access
+.access {
+  position: relative;
+  width: 70%;
+  margin: 30px auto 0;
+  padding-top: 50px;
+  display: flex;
+  line-height: 1.7;
+
+  @include pc {
+    width: 90%;
+  }
+
+  @include tab {
+    flex-direction: column;
+    margin: 10px auto 0;
+  }
+
+  &__text {
+    width: 50%;
+    padding: 20px;
+
+    @include tab {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    @include sp {
+      width: 100%;
+      margin: 0 auto 0 0;
+    }
+
+
+    &--logo {
+      width: 100%;
+
+      &-img {
+        width: 30%;
+
+        @include sp {
+          width: 50%;
+        }
+      }
+
+      &-xs {
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 2% 2%;
+
+        @include sp {
+          font-size: 12px;
+          margin: 2%;
+        }
+      }
+    }
+
+    &--medium {
+      width: 100%;
+      font-size: 16px;
+      margin: 30px 0;
+
+      @include sp {
+        font-size: 14px;
+      }
+    }
+
+    &--accent {
+      font-weight: bold;
+    }
+
+    &--small {
+      font-size: 16px;
+      margin: 30px 0;
+
+      @include sp {
+        width: 70%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__img {
+    width: 45%;
+    object-fit: cover;
+
+    @include tab {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  &__illust {
+    position: absolute;
+    right: -150px;
+    bottom: -50px;
+    text-align: center;
+
+    @include pc {
+      right: 0px;
+    }
+
+    @include tab {
+      bottom: 400px;
+    }
+
+    @include sp {
+      bottom: 30%;
+    }
+
+    @include xs {
+      right: -10px;
+      bottom: 28%;
+    }
+
+    &--speech {
+      position: relative;
+      display: block;
+      width: 150px;
+      margin-bottom: 100px;
+
+      @include tab {
+        width: 120px;
+      }
+
+      @include sp {
+        width: 100px;
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        z-index: 20;
+        width: 100%;
+        color: #fff;
+
+        @include sp {
+          font-size: 14px;
+        }
+
+        @include xs {
+          font-size: 12px;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 250px;
+
+        @include xs {
+          width: 100px;
+        }
+      }
+
+    }
+
+    &--boss {
+      display: block;
+      width: 120px;
+      text-align: center;
+      margin-left: 30px;
+
+      @include tab {
+        width: 80px;
+        margin-top: -40px;
+      }
+
+      @include sp {
+        width: 70px;
+      }
+
+      @include xs {
+        width: 60px;
+      }
+    }
+  }
+}
+
+.google-maps {
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden;
+
+  @include tab {
+    padding-bottom: 60%;
+  }
+
+  @include sp {
+    margin-top: 50px;
+    padding-bottom: 80%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+//footer
+.footer {
+  width: 100%;
+  background: #000;
+
+  &__logopc {
+    display: none;
+
+    @include pc {
+      display: block;
+      width: 237px;
+      margin: 0 auto;
+      padding: 30px 0 0;
+    }
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__logotab {
+    display: none;
+
+    @include tab {
+      display: block;
+      width: 237px;
+      margin: 0 auto;
+      padding: 30px 0 0;
+    }
+  }
+}
+
+.footnav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 3;
+
+  @include tab {
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 237px;
+
+    @include pc {
+      display: none;
+    }
+  }
+
+  &__box {
+    width: 15%;
+    font-size: 12px;
+
+    @include tab {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__info {
+    width: 30%;
+    line-height: 2;
+
+    @include tab {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px 0 0;
+      text-align: center;
+    }
+
+    &--medium {
+      font-size: 16px;
+
+      @include pc {
+        font-size: 14px;
+      }
+
+      @include sp {
+        font-size: 12px;
+      }
+    }
+
+    &--large {
+      font-size: 40px;
+
+      @include pc {
+        font-size: 30px;
+      }
+
+      @include sp {
+        font-size: 28px;
+      }
+    }
+
+    &--copyright {
+      font-size: 10px;
+
+      @include tab {
+        margin-top: 50px;
+      }
+    }
+  }
+}

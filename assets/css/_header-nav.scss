@@ -1,0 +1,19 @@
+.nav1 {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: space-between;
+  max-width: 1100px;
+  @include center; //センタリングmixin
+
+  //メディアクエリmixin
+  @include mq(1200) {
+    max-width: 90%;
+  }
+}
+
+.header-nav {
+
+  &__item {
+    margin-left: 50px;
+  }
+}

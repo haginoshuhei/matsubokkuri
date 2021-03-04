@@ -196,9 +196,14 @@ $xs: 320px; //小型スマホ
 }
 
 .container-nav {
+  margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
+
+  @media (max-width: 1568px) {
+    margin-top: 0;
+  }
 
   @include tab {
     width: 100%;
@@ -209,7 +214,7 @@ $xs: 320px; //小型スマホ
   }
 
   &__list {
-    padding: 2% 10px;
+    padding: 2% 12px;
     font-size: 16px;
     line-height: 41px;
 
@@ -217,14 +222,29 @@ $xs: 320px; //小型スマホ
       color: #fff;
     }
 
-    @include pc {
+    @media (max-width: 1568px) {
       padding: 1%;
     }
 
     @include tab {
       font-size: 20px;
-
     }
+  }
+}
+
+.flex {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1568px) {
+    width: 100%;
+  }
+
+  @include tab {
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
   }
 }
 

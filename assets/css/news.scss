@@ -196,9 +196,14 @@ $xs: 320px; //小型スマホ
 }
 
 .container-nav {
+  margin-top: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
+
+  @media (max-width: 1568px) {
+    margin-top: 0;
+  }
 
   @include tab {
     width: 100%;
@@ -209,7 +214,7 @@ $xs: 320px; //小型スマホ
   }
 
   &__list {
-    padding: 2% 10px;
+    padding: 2% 12px;
     font-size: 16px;
     line-height: 41px;
 
@@ -217,14 +222,29 @@ $xs: 320px; //小型スマホ
       color: #fff;
     }
 
-    @include pc {
+    @media (max-width: 1568px) {
       padding: 1%;
     }
 
     @include tab {
       font-size: 20px;
-
     }
+  }
+}
+
+.flex {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1568px) {
+    width: 100%;
+  }
+
+  @include tab {
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
   }
 }
 
@@ -266,10 +286,197 @@ $xs: 320px; //小型スマホ
   }
 }
 
+//breadcrumbs
+.breadcrumbs {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+
+  @include tab {
+    width: 90%;
+  }
+
+  &__list {
+    font-size: 18px;
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    a {
+      color: #cf3d3d;
+    }
+
+    &::after {
+      content: '>';
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    &:last-child {
+      &::after {
+        content: '';
+        display: inline-block;
+        color: #000;
+      }
+    }
+  }
+}
+
+//article
 
 
+.article-container {
+  width: 1000px;
+  margin: 0 auto;
 
+  @include pc {
+    width: 90%;
+  }
+}
 
+.article {
+  width: 100%;
+  padding: 130px 0;
+  border-bottom: 1px solid #000;
+
+  @include tab {
+    padding: 70px 0;
+  }
+
+  .article-flex {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      flex-direction: column;
+    }
+  }
+
+  &__date {
+    font-size: 18px;
+    width: 20%;
+    line-height: 4;
+    position: relative;
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: 70px;
+      left: 0;
+
+      @include sp {
+        top: 45px;
+      }
+    }
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    width: 75%;
+    line-height: 4;
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    @include pc {
+      line-height: 3;
+    }
+
+    @include tab {
+      line-height: 2.5;
+    }
+
+    @include sp {
+      width: 100%;
+    }
+
+    &--medium {
+      font-size: 18px;
+      margin-bottom: 70px;
+
+      @include tab {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &--img {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
+
+.page-nav {
+  margin: 0 auto;
+  padding: 150px 0 130px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @include tab {
+    padding: 70px 50px;
+  }
+
+  @include sp {
+    flex-wrap: wrap;
+    padding: 70px 30px;
+  }
+
+  @include xs {
+    padding: 70px 10px;
+  }
+
+  &__list {
+    display: inline;
+    margin: 0 1px;
+    padding: 0;
+
+    @include sp {
+      font-size: 14px;
+      margin: 20px 1px;
+    }
+
+    span {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 8px 12px;
+      background: #000;
+      border: 1px solid #000;
+      vertical-align: middle;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 8px 12px;
+      border: 1px solid #000;
+      background: #fff;
+      color: #000;
+      vertical-align: middle;
+
+      &:hover {
+        background: #efefef;
+      }
+    }
+  }
+}
 
 //footer
 .footer {
@@ -389,4 +596,3 @@ $xs: 320px; //小型スマホ
     }
   }
 }
-

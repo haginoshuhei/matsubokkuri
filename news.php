@@ -24,27 +24,179 @@
             <label for="drawer-check" class="drawer-open"><span></span></label>
             <nav class="nav">
               <ul class="container-nav">
-                <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
-                <li class="container-nav__list"><a href="#">ニュース</a></li>
-                <li class="container-nav__list"><a href="#">メニュー</a></li>
-                <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
-                <li class="container-nav__list"><a href="#">ネットショップ</a></li>
-                <li class="container-nav__list"><a href="#">店舗紹介</a></li>
-                <li class="container-nav__list"><a href="#">会社概要</a></li>
-                <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
-                <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                <div class="flex">
+                  <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
+                  <li class="container-nav__list"><a href="#">ニュース</a></li>
+                  <li class="container-nav__list"><a href="#">メニュー</a></li>
+                  <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
+                </div>
+                <div class="flex">
+                  <li class="container-nav__list"><a href="#">ネットショップ</a></li>
+                  <li class="container-nav__list"><a href="#">店舗紹介</a></li>
+                  <li class="container-nav__list"><a href="#">会社概要</a></li>
+                  <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
+                  <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                </div>
               </ul>
             </nav>
           </div>
           <h2 class="header__pagetitle">NEWS</h2>
         </header>
         <!-- contents -->
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
+            <li class="breadcrumbs__list">ニュース</li>
+          </ul>
+        </nav>
 
+        <article class="article-container">
+          <div class="article">
+            <div class="article-flex">
+              <time class="article__date">
+                2020.11.01
+              </time>
+              <div class="article__desc">
+                <h2 class="article__desc--medium">
+                  <!-- タイトル -->
+                  軽井沢にホセ・ルイス日本2号店をオープンいたします。
+                </h2>
+                <p class="article__desc--medium">
+                  ■2020年6月20日(土)　ランチ オープン<br>
+                  ランチ営業がスタートいたします。メインのお料理をお選びいただける2つのプリフィックススタイルと、ホセ・ルイスの名物料理を集めたコースの3つのメニューからお選びいただけます。<br>
+                  営業時間：11:30〜14:00（L.O）
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年6月26日(金)　ディナー オープン<br>
+                  レストランのディナー営業がスタートいたします。スペイン王室御用達「ホセ・ルイス」コース料理をご堪能ください。<br>
+                  ご予約なくご利用いただけますのでお気軽にお越し下さい。<br>
+                  営業時間17：00〜19：00(L.O)
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年7月1日(水)〜2日(木)　休館<br>
+                  グランドオープン準備のため休館致します。<br>
+                  メールやお電話にてご予約、ご質問を承っております。お気軽にお問い合わせください。
+                </p>
+              </div><!-- article__desc -->
+            </div><!-- .article-flex -->
+          </div><!-- .article -->
 
+          <div class="article">
+            <div class="article-flex">
+              <time class="article__date">
+                2020.11.01
+              </time>
+              <div class="article__desc">
+                <h2 class="article__desc--medium">
+                  <!-- タイトル -->
+                  軽井沢にホセ・ルイス日本2号店をオープンいたします。
+                </h2>
+                <p class="article__desc--medium">
+                  ■2020年6月20日(土)　ランチ オープン<br>
+                  ランチ営業がスタートいたします。メインのお料理をお選びいただける2つのプリフィックススタイルと、ホセ・ルイスの名物料理を集めたコースの3つのメニューからお選びいただけます。<br>
+                  営業時間：11:30〜14:00（L.O）
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年6月26日(金)　ディナー オープン<br>
+                  レストランのディナー営業がスタートいたします。スペイン王室御用達「ホセ・ルイス」コース料理をご堪能ください。<br>
+                  ご予約なくご利用いただけますのでお気軽にお越し下さい。<br>
+                  営業時間17：00〜19：00(L.O)
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年7月1日(水)〜2日(木)　休館<br>
+                  グランドオープン準備のため休館致します。<br>
+                  メールやお電話にてご予約、ご質問を承っております。お気軽にお問い合わせください。
+                </p>
+              </div><!-- article__desc -->
+            </div><!-- .article-flex -->
+          </div><!-- .article -->
 
+          <div class="article">
+            <div class="article-flex">
+              <time class="article__date">
+                2020.11.01
+              </time>
+              <div class="article__desc">
+                <img class="article__desc--img" src="assets/img/article-img.png" alt="">
+                <h2 class="article__desc--medium">
+                  <!-- タイトル -->
+                  軽井沢にホセ・ルイス日本2号店をオープンいたします。
+                </h2>
+                <p class="article__desc--medium">
+                  ■2020年6月20日(土)　ランチ オープン<br>
+                  ランチ営業がスタートいたします。メインのお料理をお選びいただける2つのプリフィックススタイルと、ホセ・ルイスの名物料理を集めたコースの3つのメニューからお選びいただけます。<br>
+                  営業時間：11:30〜14:00（L.O）
+                </p>
+                <p class="article__desc--medium">
+                  メールやお電話にてご予約、ご質問を承っております。お気軽にお問い合わせください。
+                </p>
+                <p>https://twin-line-hotel.com/</p>
+              </div><!-- article__desc -->
+            </div><!-- .article-flex -->
+          </div><!-- .article -->
 
+          <div class="article">
+            <div class="article-flex">
+              <time class="article__date">
+                2020.11.01
+              </time>
+              <div class="article__desc">
+                <h2 class="article__desc--medium">
+                  <!-- タイトル -->
+                  軽井沢にホセ・ルイス日本2号店をオープンいたします。
+                </h2>
+                <p class="article__desc--medium">
+                  ■2020年6月20日(土)　ランチ オープン<br>
+                  ランチ営業がスタートいたします。メインのお料理をお選びいただける2つのプリフィックススタイルと、ホセ・ルイスの名物料理を集めたコースの3つのメニューからお選びいただけます。<br>
+                  営業時間：11:30〜14:00（L.O）
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年6月26日(金)　ディナー オープン<br>
+                  レストランのディナー営業がスタートいたします。スペイン王室御用達「ホセ・ルイス」コース料理をご堪能ください。<br>
+                  ご予約なくご利用いただけますのでお気軽にお越し下さい。<br>
+                  営業時間17：00〜19：00(L.O)
+                </p>
+                <p class="article__desc--medium">
+                  ■2020年7月1日(水)〜2日(木)　休館<br>
+                  グランドオープン準備のため休館致します。<br>
+                  メールやお電話にてご予約、ご質問を承っております。お気軽にお問い合わせください。
+                </p>
+              </div><!-- article__desc -->
+            </div><!-- .article-flex -->
+          </div><!-- .article -->
 
+          <div class="article">
+            <div class="article-flex">
+              <time class="article__date">
+                2020.11.01
+              </time>
+              <div class="article__desc">
+                <img class="article__desc--img" src="assets/img/article-img.png" alt="">
+                <h2 class="article__desc--medium">
+                  <!-- タイトル -->
+                  軽井沢にホセ・ルイス日本2号店をオープンいたします。
+                </h2>
+                <p class="article__desc--medium">
+                  ■2020年6月20日(土)　ランチ オープン<br>
+                  ランチ営業がスタートいたします。メインのお料理をお選びいただける2つのプリフィックススタイルと、ホセ・ルイスの名物料理を集めたコースの3つのメニューからお選びいただけます。<br>
+                  営業時間：11:30〜14:00（L.O）
+                </p>
+                <p class="article__desc--medium">
+                  メールやお電話にてご予約、ご質問を承っております。お気軽にお問い合わせください。
+                </p>
+                <p>https://twin-line-hotel.com/</p>
+              </div><!-- article__desc -->
+            </div><!-- .article-flex -->
+          </div><!-- .article -->
+        </article>
 
+        <ul class="page-nav">
+          <li class="page-nav__list"><span>1</span></li>
+          <li class="page-nav__list"><a href="#">2</a></li>
+          <li class="page-nav__list"><a href="#">3</a></li>
+          <li class="page-nav__list"><a href="#">4</a></li>
+          <li class="page-nav__list"><a href="#">5</a></li>
+        </ul>
 
         <footer class="footer">
           <img class="footer__logopc" src="assets/img/footerlogo.png" alt="松毬">

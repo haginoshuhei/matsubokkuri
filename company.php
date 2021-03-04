@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="stylesheet" href="assets/css/company.css" />
 </head>
 <body>
   <body id="body">
@@ -39,15 +39,44 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">松毬のこだわり</h2>
+          <h2 class="header__pagetitle">会社概要</h2>
         </header>
         <!-- contents -->
 
-
-
-
-
-
+        <section class="company">
+          <table class="company-info">
+            <tbody>
+              <tr>
+                <th class="company-info--bold">社名</th>
+                <td class="company-info--data">テキストが入ります。</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">設立</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">資本金</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">本社所在地</th>
+                <td class="company-info--data">大阪府堺市中区深井清水町4034 中迫ビル 1F</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">代表者</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">従業員数</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+              <tr>
+                <th class="company-info--bold">事業内容</th>
+                <td class="company-info--data">松毬（マツボックリ）</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
         <footer class="footer">
           <img class="footer__logopc" src="assets/img/footerlogo.png" alt="松毬">

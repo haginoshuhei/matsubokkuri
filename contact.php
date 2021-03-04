@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
 </head>
 <body>
   <body id="body">
@@ -39,15 +39,42 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">松毬のこだわり</h2>
+          <h2 class="header__pagetitle">問い合わせ</h2>
         </header>
         <!-- contents -->
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
+            <li class="breadcrumbs__list">問い合わせ</li>
+          </ul>
+        </nav>
 
-
-
-
-
-
+        <section>
+          <form class="contact" action="" method="post" name="form">
+            <div class="contact__item">
+                <label class="contact__item--label">お問い合わせ内容</label>
+                <input class="contact__item--radio" type="radio" name="inquiry" value="ご予約"> ご予約
+                <input class="contact__item--radio" type="radio" name="inquiry" value="問い合わせ" checked> 問い合わせ
+            </div>
+            <div class="contact__item">
+                <label class="contact__item--label">お名前</label>
+                <input type="text" name="name" value="" class="contact__item--input">
+            </div>
+            <div class="contact__item">
+                <label class="contact__item--label">ふりがな</label>
+                <input type="text" name="furigana" value="" class="contact__item--input">
+            </div>
+            <div class="contact__item">
+                <label class="contact__item--label">メールアドレス</label>
+                <input type="text" name="email" value="" class="contact__item--input">
+            </div>
+            <div class="contact__item">
+                <label class="contact__item--label">お問い合わせ内容<span>必須</span></label>
+                <textarea name="content" rows="5"  class="contact__item--textarea"></textarea>
+            </div>
+          <button type="submit" class="contact__item--btn">確認画面へ</button>
+        </form>
+        </section>
 
         <footer class="footer">
           <img class="footer__logopc" src="assets/img/footerlogo.png" alt="松毬">
@@ -77,7 +104,6 @@
             </div>
           </div><!-- footnav -->
         </footer>
-
 
       </main>
 

@@ -10,7 +10,11 @@
 <body>
   <body id="body">
 
+<<<<<<< HEAD
     <div class="wrapper recipe 210305">
+=======
+    <div class="wrapper">
+>>>>>>> 210304
 
       <main>
         <header>
@@ -23,15 +27,19 @@
             <label for="drawer-check" class="drawer-open"><span></span></label>
             <nav class="nav">
               <ul class="container-nav">
-                <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
-                <li class="container-nav__list"><a href="#">ニュース</a></li>
-                <li class="container-nav__list"><a href="#">メニュー</a></li>
-                <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
-                <li class="container-nav__list"><a href="#">ネットショップ</a></li>
-                <li class="container-nav__list"><a href="#">店舗紹介</a></li>
-                <li class="container-nav__list"><a href="#">会社概要</a></li>
-                <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
-                <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                <div class="flex">
+                  <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
+                  <li class="container-nav__list"><a href="#">ニュース</a></li>
+                  <li class="container-nav__list"><a href="#">メニュー</a></li>
+                  <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
+                </div>
+                <div class="flex">
+                  <li class="container-nav__list"><a href="#">ネットショップ</a></li>
+                  <li class="container-nav__list"><a href="#">店舗紹介</a></li>
+                  <li class="container-nav__list"><a href="#">会社概要</a></li>
+                  <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
+                  <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                </div>
               </ul>
             </nav>
           </div>

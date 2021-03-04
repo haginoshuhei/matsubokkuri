@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link rel="stylesheet" href="assets/css/product.css" />
 </head>
 <body>
   <body id="body">
@@ -39,15 +39,37 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">松毬のこだわり</h2>
+          <h2 class="header__pagetitle">［大阪流］もんじゃ焼</h2>
         </header>
         <!-- contents -->
 
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
+            <li class="breadcrumbs__list">ネット通販</li>
+          </ul>
+        </nav>
 
-
-
-
-
+        <section class="product">
+          <h2 class="product__title">商品紹介</h2>
+          <div class="product__container">
+            <img class="product__container--img" src="assets/img/okonomi.jpg" alt="">
+            <div class="product__desc">
+              <p class="product__desc--large">
+                ［大阪流］もんじゃ焼
+              </p>
+              <span class="product__desc--red">
+                ¥1,980（税別）
+              </span>
+              <p class="product__desc--medium">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+              <div class="product__desc--btn">
+                <a href="#">今すぐ購入</a>
+              </div>
+            </div><!-- .product__desc -->
+          </div><!-- .product__container -->
+        </section>
 
         <footer class="footer">
           <img class="footer__logopc" src="assets/img/footerlogo.png" alt="松毬">

@@ -10,7 +10,7 @@
 <body>
   <body id="body">
 
-    <div class="wrapper">
+    <div class="wrapper recipe">
       
 
       <main>

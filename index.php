@@ -23,7 +23,7 @@
             <label for="drawer-check" class="drawer-open"><span></span></label>
             <nav class="nav">
               <ul class="container-nav">
-                <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
+                <li class="container-nav__list"><a href="">松毬のこだわり</a></li>
                 <li class="container-nav__list"><a href="#">ニュース</a></li>
                 <li class="container-nav__list"><a href="#">メニュー</a></li>
                 <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>

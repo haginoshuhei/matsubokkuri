@@ -11,7 +11,6 @@
   <body id="body">
 
     <div class="wrapper">
-      
 
       <main>
         <header>
@@ -43,6 +42,74 @@
           <h2 class="header__pagetitle">松毬のこだわり</h2>
         </header>
         <!-- contents -->
+
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
+            <li class="breadcrumbs__list">メニュー・コース</li>
+          </ul>
+        </nav>
+
+        <section class="menu">
+          <h2 class="menu__title">メニュー</h2>
+          <div class="menu__container">
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>［大阪流］もんじゃ焼</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>ネギ焼き</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>広島焼</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>お好み焼き</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>焼きそば・焼うどん</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>一品・サラダ</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>揚げ物・鉄板焼き・ご飯もの</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>デザート</p>
+            </div>
+            <div class="menu__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>期間限定</p>
+            </div>
+          </div><!-- .menu__containe -->
+        </section>
+
+        <section class="course">
+          <h2 class="course__title">コース</h2>
+          <div class="course__container">
+            <div class="course__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>もんじゃコース</p>
+            </div>
+            <div class="course__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>鶏鍋コース</p>
+            </div>
+            <div class="course__container--item">
+              <img src="assets/img/okonomi.jpg" alt="">
+              <p>チゲ鍋コース</p>
+            </div>
+          </div><!-- .menu__containe -->
+
+        </section>
 
 
 

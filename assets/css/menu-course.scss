@@ -286,10 +286,148 @@ $xs: 320px; //小型スマホ
   }
 }
 
+//menu
+.menu {
+  width: 100%;
 
+  &__title {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto 0;
 
+    @include sp {
+      font-size: 24px;
+    }
 
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 3px;
+      background-color: #000;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
+      @include sp {
+        height: 2 px;
+      }
+    }
+  }
+
+  &__container {
+    width: 57%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    @include pc {
+      width: 70%;
+    }
+
+    @include tab {
+      width: 85%;
+    }
+
+    @include sp {
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+
+    &--item {
+      text-align: center;
+
+      p {
+        margin: 20px auto 40px;
+        font-weight: bold;
+        font-size: 20px;
+
+        @include pc {
+          font-size: 18px;
+        }
+
+        @include tab {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+//course
+
+.course {
+  width: 100%;
+
+  &__title {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto 0;
+
+    @include sp {
+      font-size: 24px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 3px;
+      background-color: #000;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include sp {
+        height: 2 px;
+      }
+    }
+  }
+
+  &__container {
+    width: 57%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    @include pc {
+      width: 70%;
+    }
+
+    @include tab {
+      width: 85%;
+    }
+
+    @include sp {
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+
+    &--item {
+      text-align: center;
+
+      p {
+        margin: 20px auto 40px;
+        font-weight: bold;
+        font-size: 20px;
+
+        @include pc {
+          font-size: 18px;
+        }
+
+        @include tab {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
 
 //footer
 .footer {

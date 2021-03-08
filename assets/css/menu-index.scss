@@ -331,8 +331,32 @@ $xs: 320px; //小型スマホ
   padding-top: 130px;
 }
 
+/* &__slide {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+
+    &--img {
+      width: 100%;
+
+      img {
+        display: inline-block;
+        max-width: 840px;
+        max-height: 540px;
+        margin: 50px;
+
+        @include tab {
+          max-width: 500px;
+        }
+
+      }
+    }
+  }
+} */
+
 .menu-container {
-  margin: 20px auto;
+  margin: 0px auto 20px;
 }
 
 .menulist {

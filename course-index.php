@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/product.css" />
+  <link rel="stylesheet" href="assets/css/course-index.css" />
 </head>
 <body>
   <body id="body">
@@ -13,7 +13,6 @@
     <div class="wrapper">
 
       <main>
-        <header>
           <!-- header -->
         <header class="header">
           <h1 class="header__logo"><img src="assets/img/logo-white.svg" alt="松毬"></h1>
@@ -39,36 +38,76 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">［大阪流］もんじゃ焼</h2>
+          <h2 class="header__pagetitle">もんじゃコース</h2>
         </header>
         <!-- contents -->
 
-        <nav>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__list"><a class="breadcrumbs__list" href="index.php">Top</a></li>
-            <li class="breadcrumbs__list">ネット通販</li>
-          </ul>
-        </nav>
+        <section class="course">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/okonomi.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/okonomi.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/okonomi.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+          <!-- <div class="course__slide">
+            <div class="course__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
+            <div class="course__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
+            <div class="course__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
+          </div>
+          <div class="course__btn-prev"></div>
+          <div class="course__btn-next"></div> -->
+        </section>
 
-        <section class="product">
-          <h2 class="product__title">商品紹介</h2>
-          <div class="product__container">
-            <img class="product__container--img" src="assets/img/okonomi.jpg" alt="">
-            <div class="product__desc">
-              <p class="product__desc--large">
-                ［大阪流］もんじゃ焼
-              </p>
-              <span class="product__desc--red">
-                ¥1,980（税別）
-              </span>
-              <p class="product__desc--medium">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="product__desc--btn">
-                <a href="#">今すぐ購入</a>
-              </div>
-            </div><!-- .product__desc -->
-          </div><!-- .product__container -->
+        <section class="coursetext">
+          <h3 class="coursetext__title">もんじゃコース</h3>
+          <table class="coursetext__info">
+            <tbody>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">コース料金</th>
+                <td class="coursetext__info--data">1.480円</td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">品数</th>
+                <td class="coursetext__info--data">5品</td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">利用可能人数</th>
+                <td class="coursetext__info--data">2名から</td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">滞在可能時間</th>
+                <td class="coursetext__info--data">2時間</td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">飲み放題</th>
+                <td class="coursetext__info--data">あり</td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">コース内容</th>
+                <td class="coursetext__info--data">
+                  <span>・一品料理1品</span>
+                  <span>・鉄板料理1品</span>
+                  <span>・セイロ蒸し</span>
+                  <span>・もんじゃ（どれでも1品）</span>
+                  <span>・さつまいも</span>
+                </td>
+              </tr>
+              <tr class="coursetext__info--box">
+                <th class="coursetext__info--bold">注意事項</th>
+                <td class="coursetext__info--data">
+                  <span>※2～16名様まで</span>
+                  <span>※お時間は2時間制となっております。</span>
+                  <span>※2時間飲み放題（L.O90分）</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="coursetext__btn">
+            <a href="#">TOPへ戻る</a>
+          </div>
         </section>
 
         <footer class="footer">
@@ -100,12 +139,12 @@
           </div><!-- footnav -->
         </footer>
 
-
       </main>
 
     </div>
 
     <script src="assets/bundle.js"></script>
+    <script src="assets/js/swiper.js"></script>
 
     </body>
 </html>

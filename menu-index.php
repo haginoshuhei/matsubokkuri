@@ -23,16 +23,16 @@
             <nav class="nav">
               <ul class="container-nav">
                 <div class="flex">
-                  <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
-                  <li class="container-nav__list"><a href="#">ニュース</a></li>
-                  <li class="container-nav__list"><a href="#">メニュー</a></li>
-                  <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
+                  <li class="container-nav__list"><a href="recipe.php">松毬のこだわり</a></li>
+                  <li class="container-nav__list"><a href="news.php">ニュース</a></li>
+                  <li class="container-nav__list"><a href="menu-course.php">メニュー</a></li>
+                  <li class="container-nav__list"><a href="recipe.php">もんじゃ焼きの焼き方</a></li>
                 </div>
                 <div class="flex">
                   <li class="container-nav__list"><a href="#">ネットショップ</a></li>
                   <li class="container-nav__list"><a href="#">店舗紹介</a></li>
-                  <li class="container-nav__list"><a href="#">会社概要</a></li>
-                  <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
+                  <li class="container-nav__list"><a href="company.php">会社概要</a></li>
+                  <li class="container-nav__list"><a href="reserve.php">ご予約お問い合わせ</a></li>
                   <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
                 </div>
               </ul>
@@ -41,15 +41,9 @@
           <h2 class="header__pagetitle">もんじゃ焼き</h2>
         </header>
         <!-- contents -->
-        <nav>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
-            <li class="breadcrumbs__list">ニュース</li>
-          </ul>
-        </nav>
 
         <section class="menu">
-        <!-- <div class="swiper-container">
+        <div class="swiper-container">
           <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="assets/img/okonomi.jpg" alt=""></div>
               <div class="swiper-slide"><img src="assets/img/okonomi.jpg" alt=""></div>
@@ -57,14 +51,14 @@
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div> -->
-          <div class="menu__img">
-            <div><img src="assets/img/okonomi.jpg" alt=""></div>
-            <div><img src="assets/img/okonomi.jpg" alt=""></div>
-            <div><img src="assets/img/okonomi.jpg" alt=""></div>
+        </div>
+          <!-- <div class="menu__slide">
+            <div class="menu__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
+            <div class="menu__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
+            <div class="menu__slide--img"><img src="assets/img/okonomi.jpg" alt=""></div>
           </div>
-          <div class="button-prev"></div>
-          <div class="button-next"></div>
+          <div class="menu__btn-prev"></div>
+          <div class="menu__btn-next"></div> -->
         </section>
 
         <section class="menu-container">
@@ -216,18 +210,18 @@
             <img class="footnav__logo" src="assets/img/footerlogo.png" alt="松毬">
             <nav class="footnav__box">
               <ul>
-                <li><a href="#">松毬のこだわり</a></li>
-                <li><a href="#">ニュース</a></li>
-                <li><a href="#">メニュー</a></li>
-                <li><a href="#">もんじゃ焼きの焼き方</a></li>
+                <li><a href="recipe.php">松毬のこだわり</a></li>
+                <li><a href="news.php">ニュース</a></li>
+                <li><a href="menu-course.php">メニュー</a></li>
+                <li><a href="recipe.php">もんじゃ焼きの焼き方</a></li>
               </ul>
             </nav>
             <nav class="footnav__box">
               <ul>
                 <li><a href="#">ネットショップ</a></li>
                 <li><a href="#">店舗紹介</a></li>
-                <li><a href="#">会社概要</a></li>
-                <li><a href="#">ご予約・問い合わせ</a></li>
+                <li><a href="company.php">会社概要</a></li>
+                <li><a href="reserve.php">ご予約・問い合わせ</a></li>
               </ul>
             </nav>
             <div class="footnav__info">

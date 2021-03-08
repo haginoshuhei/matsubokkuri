@@ -286,10 +286,235 @@ $xs: 320px; //小型スマホ
   }
 }
 
+//breadcrumbs
+.breadcrumbs {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
 
+  @include tab {
+    width: 90%;
+  }
 
+  &__list {
+    font-size: 18px;
 
+    @include sp {
+      font-size: 14px;
+    }
 
+    a {
+      color: #cf3d3d;
+    }
+
+    &::after {
+      content: '>';
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    &:last-child {
+      &::after {
+        content: '';
+        display: inline-block;
+        color: #000;
+      }
+    }
+  }
+}
+
+//course-index
+.course {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+/*
+  &__slide {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+
+    &--img {
+      width: 100%;
+
+      img {
+        display: inline-block;
+        max-width: 840px;
+        max-height: 540px;
+        margin: 50px;
+
+        @include tab {
+          max-width: 500px;
+        }
+
+      }
+    }
+  }
+} */
+
+.coursetext {
+  margin: 50px auto 20px;
+
+  &__title {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px auto 0;
+    font-weight: bold;
+
+    @include sp {
+      font-size: 24px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 3px;
+      background-color: #000;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include sp {
+        height: 2 px;
+      }
+    }
+  }
+
+  &__info {
+    width: 600px;
+    margin: 50px auto 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+    @include tab {
+      width: 80%;
+    }
+
+    @include sp {
+      width: 90%;
+    }
+
+    &--box {
+      margin: 0px auto;
+      padding: 30px auto;
+      border-bottom: 1px solid #f0f0f0;
+
+      &:last-child {
+        border-bottom: hidden;
+      }
+    }
+
+    &--bold {
+      width: 250px;
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0;
+      margin: 15px 0;
+      background: #f0f0f0;
+
+      @include sp {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &--data {
+      vertical-align: middle;
+      line-height: 36px;
+      padding: 20px;
+
+      @include sp {
+        width: 100%;
+        display: block;
+        padding: 10px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 20%;
+    margin: 80px auto;
+    padding: 20px 50px;
+    background: #a12a25;
+    text-align: center;
+
+    a {
+      color: #fff;
+    }
+
+    @include pc {
+      width: 35%;
+    }
+
+    @include tab {
+      width: 30%;
+    }
+
+    @media (max-width: 660px) {
+      width: 42%;
+    }
+
+    @include sp {
+      padding: 10px 30px;
+      width: 70%;
+    }
+  }
+
+}
+
+//swiper
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 840px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+
+  @include tab {
+    display: block;
+    color: #fff;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 0;
+  right: auto
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: -10px;
+  left: auto
+}
 
 //footer
 .footer {

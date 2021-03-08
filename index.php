@@ -26,14 +26,14 @@
                 <div class="flex">
                   <li class="container-nav__list"><a href="recipe.php">松毬のこだわり</a></li>
                   <li class="container-nav__list"><a href="news.php">ニュース</a></li>
-                  <li class="container-nav__list"><a href="menu.php">メニュー</a></li>
-                  <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
+                  <li class="container-nav__list"><a href="menu-course.php">メニュー</a></li>
+                  <li class="container-nav__list"><a href="recipe.php">もんじゃ焼きの焼き方</a></li>
                 </div>
                 <div class="flex">
                   <li class="container-nav__list"><a href="#">ネットショップ</a></li>
                   <li class="container-nav__list"><a href="#">店舗紹介</a></li>
-                  <li class="container-nav__list"><a href="#">会社概要</a></li>
-                  <li class="container-nav__list"><a href="#">ご予約お問い合わせ</a></li>
+                  <li class="container-nav__list"><a href="company.php">会社概要</a></li>
+                  <li class="container-nav__list"><a href="reserve.php">ご予約お問い合わせ</a></li>
                   <li class="container-nav__list"><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
                 </div>
               </ul>
@@ -66,7 +66,7 @@
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </p>
               <div class="concept__text--btn">
-                <a href="#">メニューはこちら</a>
+                <a href="menu-course.php">メニューはこちら</a>
               </div>
             </div>
           </div><!-- concept__text -->
@@ -88,7 +88,7 @@
               <dd class="article__title">ここにタイトルが入ります</dd>
             </dl>
           </div><!-- container-news -->
-          <div class="news__btn"><a href="#">NEWS一覧で見る</a></div>
+          <div class="news__btn"><a href="news.php">NEWS一覧で見る</a></div>
         </section>
         <section class="course">
           <div class="course__border">
@@ -131,7 +131,7 @@
           <h2 class="menu__title">松毬のメニュー</h2>
           <div class="bg-red">
             <div class="mask-red">
-              <div class="menu__btn"><a href="#">メニューを全て見る</a></div>
+              <div class="menu__btn"><a href="menu-course.php">メニューを全て見る</a></div>
             </div><!-- mask-red -->
           </div>
           <div class="swiper-container"> <!-- ↑swiper-container -->
@@ -192,18 +192,18 @@
             <img class="footnav__logo" src="assets/img/footerlogo.png" alt="松毬">
             <nav class="footnav__box">
               <ul>
-                <li><a href="#">松毬のこだわり</a></li>
-                <li><a href="#">ニュース</a></li>
-                <li><a href="#">メニュー</a></li>
-                <li><a href="#">もんじゃ焼きの焼き方</a></li>
+                <li><a href="recipe.php">松毬のこだわり</a></li>
+                <li><a href="news.php">ニュース</a></li>
+                <li><a href="menu-course.php">メニュー</a></li>
+                <li><a href="recipe.php">もんじゃ焼きの焼き方</a></li>
               </ul>
             </nav>
             <nav class="footnav__box">
               <ul>
                 <li><a href="#">ネットショップ</a></li>
                 <li><a href="#">店舗紹介</a></li>
-                <li><a href="#">会社概要</a></li>
-                <li><a href="#">ご予約・問い合わせ</a></li>
+                <li><a href="company.php">会社概要</a></li>
+                <li><a href="reserve.php">ご予約・問い合わせ</a></li>
               </ul>
             </nav>
             <div class="footnav__info">
@@ -219,6 +219,7 @@
     </div>
 
     <script src="assets/bundle.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <!-- <script src="assets/js/swiper.js"></script> -->
 
     <!-- <script>

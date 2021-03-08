@@ -668,6 +668,7 @@ $xs: 320px; //小型スマホ
 
   &__img {
     width: 50%;
+    object-fit: cover;
 
     @include tab {
       width: 100%;
@@ -700,7 +701,7 @@ $xs: 320px; //小型スマホ
 
   &__btn {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
@@ -714,6 +715,7 @@ $xs: 320px; //小型スマホ
     @include pc {
       width: 35%;
       margin: 1% auto;
+      top: 100%;
     }
 
     @include tab {
@@ -757,7 +759,8 @@ $xs: 320px; //小型スマホ
   }
 }
 
-.container-menu {
+//swiper
+.swiper-container {
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -768,7 +771,12 @@ $xs: 320px; //小型スマホ
   }
 }
 
-.menulist {
+.swiper-wrapper {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.swiper-slide {
   width: 30%;
   margin: 20px auto;
 
@@ -791,12 +799,6 @@ $xs: 320px; //小型スマホ
     text-align: center;
     color: #fff;
   }
-}
-
-//swiper
-.swiper-wrapper {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .swiper-button-next,
@@ -832,17 +834,22 @@ $xs: 320px; //小型スマホ
   position: relative;
   width: 70%;
   margin: 30px auto 0;
-  padding-top: 50px;
+  padding-top: 150px;
   display: flex;
   line-height: 1.7;
 
   @include pc {
     width: 90%;
+    padding-top: 100px;
   }
 
   @include tab {
     flex-direction: column;
     margin: 10px auto 0;
+  }
+
+  @include sp {
+    padding-top: 50px;
   }
 
   &__text {

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>松毬</title>
-  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/transaction-law.css" />
 </head>
 <body>
   <body id="body">
@@ -39,41 +39,55 @@
               </ul>
             </nav>
           </div>
-          <h2 class="header__pagetitle">問い合わせ</h2>
+          <h2 class="header__pagetitle">特定商取引法</h2>
         </header>
         <!-- contents -->
         <nav>
           <ul class="breadcrumbs">
             <li class="breadcrumbs__list"><a  class="breadcrumbs__list" href="index.php">Top</a></li>
-            <li class="breadcrumbs__list">問い合わせ</li>
+            <li class="breadcrumbs__list">会社概要</li>
+            <li class="breadcrumbs__list">特定商取引法</li>
           </ul>
         </nav>
 
-        <section>
-          <form class="contact" action="" method="post" name="form">
-            <div class="contact__item">
-                <label class="contact__item--label">お問い合わせ内容</label>
-                <input class="contact__item--radio" type="radio" name="inquiry" value="ご予約"> ご予約
-                <input class="contact__item--radio" type="radio" name="inquiry" value="問い合わせ" checked> 問い合わせ
-            </div>
-            <div class="contact__item">
-                <label class="contact__item--label">お名前</label>
-                <input type="text" name="name" value="" class="contact__item--input">
-            </div>
-            <div class="contact__item">
-                <label class="contact__item--label">ふりがな</label>
-                <input type="text" name="furigana" value="" class="contact__item--input">
-            </div>
-            <div class="contact__item">
-                <label class="contact__item--label">メールアドレス</label>
-                <input type="text" name="email" value="" class="contact__item--input">
-            </div>
-            <div class="contact__item">
-                <label class="contact__item--label">お問い合わせ内容<span>必須</span></label>
-                <textarea name="content" rows="5"  class="contact__item--textarea"></textarea>
-            </div>
-          <button type="submit" class="contact__item--btn"><a href="#">確認画面へ</a></button>
-        </form>
+        <section class="transaction">
+          <p class="transaction__text">
+            <span>特定商取引法に基づく表記</span>
+            <span>販売業者</span>
+            <span>株式会社松毬</span>
+          </p>
+          <p class="transaction__text">
+            <span>代表者</span>
+            <span>〇〇　〇〇</span>
+          </p>
+          <p class="transaction__text">
+            <span>住所</span>
+            <span>大阪府堺市中区深井清水町4034 中迫ビル 1F</span>
+          </p>
+          <p class="transaction__text">
+            <span>代金のお支払方法・時期（申込有効期限）</span>
+            <span>クレジットカード（VISA、Master、JCB、AMEX、Diners）、又は現金でのお支払手続をして頂きます。</span>
+          </p>
+          <p class="transaction__text">
+            <span>ご予約の取消</span>
+          </p>
+          <p class="transaction__text">
+            <span>屋号またはサービス名</span>
+            <span>株式会社松毬</span>
+          </p>
+          <p class="transaction__text">
+            <span>電話番号</span>
+            <span>Tel: 050-5592-7350</span>
+            <span>受付時間　平日・土・日・祝: 17:00-25:00</span>
+          </p>
+          <p class="transaction__text">
+            <span>お問い合わせ</span>
+            <span><a href="#">お問い合わせはこちらから</a></span>
+          </p>
+          <p class="transaction__text">
+            <span>ホームページアドレス</span>
+            <span><a href="#"></a>https://</span>
+          </p>
         </section>
 
         <footer class="footer">

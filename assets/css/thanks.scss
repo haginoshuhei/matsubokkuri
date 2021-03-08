@@ -287,76 +287,49 @@ $xs: 320px; //小型スマホ
   }
 }
 
-//contact
-.reserve {
-  width: 920px;
-  margin: 120px auto;
+//thanks
+.thanks {
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 0;
   font-size: 18px;
-  font-weight: bold;
-  text-align: center;
 
-  @include pc {
-    width: 80%;
-  }
+  &__text {
+    text-align: center;
 
-  @include tab {
-    font-size: 16px;
-    margin: 80px auto;
-  }
-
-  @include sp {
-    width: 90%;
-  }
-
-  &__item {
-    margin: 50px 0 30px;
-    text-align: left;
-
-    &--label {
+    span {
       display: block;
-      margin: 20px 0;
+      line-height: 1.7;
     }
+  }
 
-    &--radio {
-      display: inline-block;
-      margin: 0 10px 0 20px;
-    }
+  &__btn {
+    display: block;
+    width: 20%;
+    margin: 100px auto 0;
+    padding: 10px 50px;
+    background: #a12a25;
+    text-align: center;
 
-    &--input {
-      width: 100%;
-      padding: 10px;
-      border: 0.5px solid #000;
-    }
-
-    &--select {
-      width: 15%;
-      padding: 10px;
-      border: 0.5px solid #000;
-
-      @include tab {
-        width: 30%;
-      }
-    }
-
-    &--btn {
-      display: inline-block;
-      font-size: 20px;
-      margin: 100px auto;
-      padding: 10px 70px;
-      background: #a12a25;
+    a {
       color: #fff;
-      width: 48%;
-      text-align: center;
+    }
 
-      @include tab {
-        font-size: 16px;
-        width: 70%;
-      }
+    @include pc {
+      width: 35%;
+    }
 
-      @include sp {
-        margin: 30px 0 20px;
-        padding: 10px 30px;
-      }
+    @include tab {
+      width: 30%;
+    }
+
+    @media (max-width: 660px) {
+      width: 42%;
+    }
+
+    @include sp {
+      padding: 10px 30px;
+      width: 70%;
     }
   }
 }

@@ -293,6 +293,7 @@ $xs: 320px; //小型スマホ
   margin: 120px auto;
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
 
   @include pc {
     width: 80%;
@@ -309,6 +310,7 @@ $xs: 320px; //小型スマホ
 
   &__item {
     margin: 50px 0 30px;
+    text-align: left;
 
     &--label {
       display: block;
@@ -347,7 +349,6 @@ $xs: 320px; //小型スマホ
       margin: 100px auto;
       padding: 10px 70px;
       background: #a12a25;
-      color: #fff;
       width: 48%;
       text-align: center;
 
@@ -359,6 +360,10 @@ $xs: 320px; //小型スマホ
       @include sp {
         margin: 30px 0 20px;
         padding: 10px 30px;
+      }
+
+      a {
+        color: #fff;
       }
     }
   }

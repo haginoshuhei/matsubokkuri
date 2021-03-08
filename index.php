@@ -24,9 +24,9 @@
             <nav class="nav">
               <ul class="container-nav">
                 <div class="flex">
-                  <li class="container-nav__list"><a href="#">松毬のこだわり</a></li>
-                  <li class="container-nav__list"><a href="#">ニュース</a></li>
-                  <li class="container-nav__list"><a href="#">メニュー</a></li>
+                  <li class="container-nav__list"><a href="recipe.php">松毬のこだわり</a></li>
+                  <li class="container-nav__list"><a href="news.php">ニュース</a></li>
+                  <li class="container-nav__list"><a href="menu.php">メニュー</a></li>
                   <li class="container-nav__list"><a href="#">もんじゃ焼きの焼き方</a></li>
                 </div>
                 <div class="flex">
@@ -134,26 +134,26 @@
               <div class="menu__btn"><a href="#">メニューを全て見る</a></div>
             </div><!-- mask-red -->
           </div>
-          <div class="container-menu swiper-container"> <!-- ↑swiper-container -->
+          <div class="swiper-container"> <!-- ↑swiper-container -->
             <div class="swiper-wrapper">
-            <dl class="menulist swiper-slide">
-                <!-- ↑swiper-slide -->
-              <dt class="menulist__img"><img src="assets/img/okonomi.jpg" alt=""></dt>
-              <dd class="menulist__title">お好み焼き・もんじゃ焼き</dd>
-            </dl>
-            <dl class="menulist swiper-slide">
-                <!-- ↑swiper-slide -->
-              <dt class="menulist__img"><img src="assets/img/omusoba.jpg" alt=""></dt>
-              <dd class="menulist__title">焼きそば</dd>
-            </dl>
-            <dl class="menulist swiper-slide">
-                <!-- ↑swiper-slide -->
-              <dt class="menulist__img"><img src="assets/img/squid.jpg" alt=""></dt>
-              <dd class="menulist__title">揚げ物・鉄板焼き・ご飯もの</dd>
-            </dl>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+              <div class="swiper-slide">
+                  <!-- ↑swiper-slide -->
+                <div class="swiper-slide__img"><img src="assets/img/okonomi.jpg" alt=""></div>
+                <div class="swiper-slide__title">お好み焼き・もんじゃ焼き</div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- ↑swiper-slide -->
+                <div class="swiper-slide__img"><img src="assets/img/omusoba.jpg" alt=""></div>
+                <div class="swiper-slide__title">焼きそば</div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- ↑swiper-slide -->
+                <div class="swiper-slide__img"><img src="assets/img/squid.jpg" alt=""></div>
+                <div class="swiper-slide__title">揚げ物・鉄板焼き・ご飯もの</div>
+              </div>
+            </div><!-- .swiper-wrapper -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
         <section class="access">
@@ -219,37 +219,36 @@
     </div>
 
     <script src="assets/bundle.js"></script>
-    <script>
-      $(function() {
-        //swiper 768以下で起動
-        var swiper; 
-        $(window).on('load resize', function(){
-            var w = $(window).width();
-            if (w <= 768) {
-                if (swiper) {
-                    return;
-                } else {
-                  var swiper = new Swiper('.swiper-container', {
-                    navigation: {
-                      nextEl: '.swiper-button-next',
-                      prevEl: '.swiper-button-prev',
-                    },
-                    loop: true,
-                    autoplay: {
-                        delay: 2000,
-                        disableOnInteraction: false,
-                      },
-                  });
-                }
-            } else {
-                if (swiper) {
-                    swiper.destroy();
-                    swiper = undefined;
-                }
-            }
-        });
-    });
-    </script>
+    <!-- <script src="assets/js/swiper.js"></script> -->
 
+    <!-- <script>
+      //swiper 768以下で起動
+      var swiper;
+      $(window).on('load resize', function () {
+        var w = $(window).width();
+        if (w <= 768) {
+          if (swiper) {
+            return;
+          } else {
+            var mySwiper = new Swiper('.swiper-container', {
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              loop: true,
+              autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+              },
+            });
+          }
+        } else {
+          if (swiper) {
+            swiper.destroy();
+            swiper = undefined;
+          }
+        }
+      });
+    </script> -->
 </body>
 </html>
